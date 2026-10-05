@@ -22,9 +22,9 @@ function calculate() {
 
 function recover() {
 
-    let total = Number(document.getElementById("rTotal").value);
-    let attended = Number(document.getElementById("rAttended").value);
-    let target = Number(document.getElementById("rTarget").value);
+    let total = Number(document.getElementById("totall").value);
+    let attended = Number(document.getElementById("attendedd").value);
+    let target = Number(document.getElementById("targett").value);
 
     let percentage = (attended / total) * 100;
 
