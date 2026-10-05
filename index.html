@@ -11,7 +11,7 @@
     <nav>
         <h2>Attend</h2>
 
-        <div class="links">
+        <div class="navbar">
             <a href="#home">Home</a>
             <a href="#calculator">Calculator</a>
             <a href="#recovery">Recovery</a>
@@ -21,15 +21,16 @@
 
     <section id="home" class="home">
 
-        <h1>Attendance Calculator</h1>
+        <h1>Check your attendance</h1>
 
-        <p>Check your attendance and know how many classes you need to attend.</p>
+      
 
         <a href="#calculator">
-            <button>Start Calculator</button>
+            <button>Check Now</button>
         </a>
 
     </section>
+
 
     <section id="calculator" class="section">
 
@@ -37,50 +38,56 @@
 
         <div class="box">
 
+          
+
             <label>Total Classes</label>
             <input type="number" id="total" placeholder="50">
 
             <label>Classes Attended</label>
             <input type="number" id="attended" placeholder="35">
 
-            <label>Required Attendance</label>
+            <label>Required Attendance (%)</label>
             <input type="number" id="target" value="75">
 
             <button onclick="calculate()">Calculate</button>
+            <button onclick="clearResult()">Clear</button>
 
         </div>
 
         <div id="result" class="result">
 
-            <h3>Your Attendance</h3>
+            <h3 id="resultSubject"></h3>
 
             <h1 id="percentage">--</h1>
 
             <p id="status"></p>
             <p id="message"></p>
 
+            <p id="missMessage"></p>
+
         </div>
 
     </section>
+
 
     <section id="recovery" class="section">
 
         <h2>Attendance Recovery</h2>
 
-        <p>See how many classes you need to attend to improve your attendance.</p>
+        <p>How many classes needed to recover </p>
 
         <div class="box">
 
             <label>Total Classes</label>
-            <input type="number" id="rTotal" placeholder="50">
+            <input type="number" id="total" placeholder="50">
 
             <label>Classes Attended</label>
-            <input type="number" id="rAttended" placeholder="30">
+            <input type="number" id="attended" placeholder="30">
 
-            <label>Required Attendance</label>
-            <input type="number" id="rTarget" value="75">
+            <label>Target Attendance (%)</label>
+            <input type="number" id="target" value="75">
 
-            <button onclick="recover()">Check</button>
+            <button onclick="recover()">Find Out</button>
 
         </div>
 
@@ -96,21 +103,25 @@
 
     </section>
 
+
     <section id="tips" class="section tips">
 
-        <h2>Some Tips</h2>
+        <h2>Tips</h2>
 
         <ul>
-            <li>Keep checking your attendance.</li>
-            <li>Try to keep your attendance above the required percentage.</li>
-            <li>Attend classes regularly if your attendance is low.</li>
+            <li>Attend classes regulary</li>
+            <li>Try to keep maximum attendance</li>
+            <li>Don't take unnecessary leaves</li>
+            
         </ul>
 
     </section>
 
+
     <footer>
-        Attend - Student Attendance Calculator
+        Attend - Check your attendance
     </footer>
+
 
     <script src="calculator.js"></script>
 
