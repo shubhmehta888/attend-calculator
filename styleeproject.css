@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #0F172A;
+    background-color: #F8FAFC;
+    background-image: radial-gradient(#CBD5E1 1px, transparent 1px);
+    background-size: 25px 25px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+nav h2 {
+    margin: 0;
+}
+
+.links {
+    margin-left: auto;
+    display: flex;
+    gap: 25px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #0F172A;
+}
+
+.links a:hover {
+    color: #10B981;
+}
+
+.home {
+    text-align: center;
+    padding: 130px 20px;
+    background-image: linear-gradient(rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.65)), url("https://images.unsplash.com/photo-1557682250-33bd709cbe85");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 12px;
+}
+
+.home h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.home p {
+    font-size: 18px;
+    color: #E2E8F0;
+}
+
+button {
+    background-color: #0F172A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #10B981;
+}
+
+.section {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+.section h2 {
+    text-align: center;
+}
+
+.section > p {
+    text-align: center;
+    color: #64748B;
+}
+
+.box {
+    background-color: white;
+    padding: 25px;
+    margin-top: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.box label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.box input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #CBD5E1;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.box input:focus {
+    outline: none;
+    border-color: #0F172A;
+}
+
+.box button {
+    width: 100%;
+}
+
+.result {
+    display: none;
+    background-color: white;
+    margin-top: 25px;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.result h1 {
+    font-size: 45px;
+    margin: 10px;
+}
+
+.tips ul {
+    background-color: white;
+    padding: 25px 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.tips li {
+    margin: 15px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    color: #64748B;
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding: 15px;
+    }
+
+    .links {
+        gap: 10px;
+        font-size: 13px;
+    }
+
+    .home h1 {
+        font-size: 35px;
+    }
+
+    .section {
+        margin: 50px auto;
+    }
+}
